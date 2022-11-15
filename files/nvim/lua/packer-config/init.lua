@@ -14,7 +14,6 @@ return require'packer'.startup(function()
     use 'tpope/vim-unimpaired'
     use 'tpope/vim-fugitive'
     use 'airblade/vim-gitgutter'
-    use '/home/mp/Playground/lua/plugins/tplugin.nvim'
     use 'tpope/vim-surround'
     use 'tpope/vim-repeat'
     use 'nvim-lua/plenary.nvim'
