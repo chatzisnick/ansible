@@ -1,14 +1,17 @@
 - hosts: localhost
+  connection: local
   become: true
+  
   tasks:
-    - name: Install packages
+  - name: Install packages
+    package:
       state: present
-      package: 
-        - htop
-        - neovim
-        - tmux
-        - git
-        - bat
-        - vim
-        - gnome-tweaks
-        - i3
+      name:
+      - htop
+      - neovim
+      - tmux
+      - git
+      - bat
+      - vim
+      - gnome-tweaks
+      - i3
