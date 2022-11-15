@@ -15,6 +15,13 @@
       - gnome-tweaks
       - i3
       
+  - name: copy nvim files
+    copy:
+     src: files/nvim/
+     dest: /home/chatzisnick/.config/nvim/
+     owner: chatzisnick
+     group: chatzisnick
+
   - name: copy .bashrc file
     copy:
      src: files/bashrc
