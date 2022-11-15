@@ -2,10 +2,13 @@
   become: true
   tasks:
     - name: Install packages
-      dnf: name={{item}}
-      with_items:
+      state: present
+      package: 
         - htop
         - neovim
         - tmux
         - git
         - bat
+        - vim
+        - gnome-tweaks
+        - i3
