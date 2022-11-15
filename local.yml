@@ -14,7 +14,7 @@
       - vim
       - gnome-tweaks
       - i3
-      
+        
   - name: copy nvim files
     copy:
      src: files/nvim
@@ -28,3 +28,7 @@
      dest: /home/chatzisnick/.bashrc
      owner: chatzisnick
      group: chatzisnick
+
+  - name: "Run a shell command on a remote host"
+    shell: git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/chatzisnick/.config/nvim/site/pack/packer/start/packer.nvim
+

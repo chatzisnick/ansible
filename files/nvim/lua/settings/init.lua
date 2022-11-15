@@ -38,7 +38,7 @@ vim.opt.list=true
 vim.opt.iskeyword:append('_')
 vim.opt.laststatus=3
 vim.opt.background='light'
-vim.cmd("colorscheme dracula")
+-- vim.cmd("colorscheme dracula")
 vim.cmd("cabbrev gd GitGutterDiffOrig")
 vim.cmd("cabbrev  ttb Telescope find_files cwd=./node_modules/bootstrap/scss/")
 
