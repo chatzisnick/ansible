@@ -14,3 +14,10 @@
       - vim
       - gnome-tweaks
       - i3
+      
+  - name: copy .bashrc file
+    copy:
+     src: files/bashrc
+     dest: /home/chatzisnick/.bashrc
+     owner: chatzisnick
+     group: chatzisnick
