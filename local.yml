@@ -30,6 +30,7 @@
      group: chatzisnick
 
   - name: "Run a shell command on a remote host"
-    become: chatzisnick
+    become: true
+    become_user: chatzisnick
     shell: git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/chatzisnick/.config/nvim/site/pack/packer/start/packer.nvim
 
