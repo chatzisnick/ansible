@@ -18,7 +18,7 @@
   - name: copy nvim files
     copy:
      src: files/nvim
-     dest: /home/chatzisnick/.config/nvim
+     dest: /home/chatzisnick/.config/
      owner: chatzisnick
      group: chatzisnick
 
