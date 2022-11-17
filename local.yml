@@ -37,5 +37,5 @@
 
   - name: "Clone git repository"
     git:
-      repo: 'https://github.com/chatzisnick/bashscripts'
+      repo: 'git@github.com:chatzisnick/bashscripts.git'
       dest: /home/chatzisnick/bashscripts
