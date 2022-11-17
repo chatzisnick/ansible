@@ -11,6 +11,7 @@
       - neovim
       - tmux
       - git
+      - fzf
       - vim
       - gnome-tweaks
       - i3
@@ -34,3 +35,7 @@
     become_user: chatzisnick
     shell: git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/chatzisnick/.config/nvim/site/pack/packer/start/packer.nvim
 
+  - name: "Clone git repository"
+      git:
+        repo: 'https://github.com/chatzisnick/bashscripts'
+        dest: /home/chatzisnick/bashscripts
